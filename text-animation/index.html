@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cyberpubk: CSS text effect</title>
+</head>
+
+<body>
+    <p>Source: <a href="https://codepen.io/mattgrosswork/pen/VwprebG">Codepen.io</a></p>
+    <section id="section1">
+        <h2>Layers</h2>
+        <p>Create multiple layers to play with. For this example I'll use ::before & ::after elements, but this could
+            just as easily be multiple divs overlapped, or whatever.</p>
+        <h2 class="hero layers" data-text="EXAMPLE">EXAMPLE</h2>
+    </section>
+    <section id="section2">
+        <h2>Paths</h2>
+        <p>Build out a set of clip-paths</p>
+        <p>Example Path:</p>
+        <div class="demo single-path"></div>
+        <p>Over text:</p>
+        <h2 class="hero paths">EXAMPLE</h2>
+    </section>
+    <section id="section3">
+        <h2>Movement</h2>
+        <p>Create a stepping movement animation, so that the layers above can appear in different places as the other
+            layers of the animation happen.</p>
+        <p>It's best to make this timing somewhat erratic.</p>
+        <div class="demo movement"></div>
+    </section>
+
+    <section id="section4">
+        <h2>Opacity</h2>
+        <p>Create a similar animation for opacity, so that the layers can appear/disappear. This will get layered with
+            the movement to create the appearance of the layers popping in and out in different places</p>
+        <p>There's an art to getting this transition to work without making the user feel motion sickness. Take some
+            time getting it right</p>
+        <div class="demo opacity"></div>
+    </section>
+    <section id="section5">
+        <h2>Font</h2>
+        <p>The next layer is changes to the font directly. These could be any properties, but we'll stick to font-weight
+            and color.</p>
+        <h2 class="hero font">EXAMPLE</h2>
+    </section>
+    <section id="section6">
+        <h2>Combined Animation Layers</h2>
+        <p>Note that some of tthe animations have sync'd timing, and some don't.</p>
+        <p>I try to sync the paths & opacity animations, so that it looks like the background layers are really a part of the main text that's glitching off.</p>
+        <p>Then I try to separately sync the color/text/filter other effects, and keep the moevment separate completely. This gives the whole thing the appearance of a lot more effects than are actually happening, because of the different combinations.</p>
+        <h2 class="hero glitch layers" data-text="EXAMPLE">
+        <span>EXAMPLE</span>
+        </h2>
+    </section>
+    <section id="section7">
+        <h2>Environment</h2>
+        <p>For good measure, it should live in the right language & context :)</p>
+        <div class="hero-container">
+          <div class="environment"></div>
+          <h2 class="hero glitch layers" data-text="近設計"><span>近設計</span></h2>
+        </div>
+</body>
+
+</html>
